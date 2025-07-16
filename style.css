@@ -1,14 +1,31 @@
 
+
+@font-face {
+    font-family: 'body-font';
+    src: url('font/Jost-Regular.woff');
+}
+@font-face {
+    font-family: 'khmer-font';
+    src: url('font/Moul-Regular.woff');
+}
+@font-face {
+    font-family: 'name-font';
+    src: url('font/Preahvihear-Regular.woff');
+}
+@font-face {
+    font-family: 'khmer-text-font';
+    src: url('font/Fasthand-Regular_1.woff');
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'body-font';
-    src: url('font/Jost-Regular.woff');
-}
 
 body{
     background-color: #fefefe;
@@ -22,12 +39,12 @@ body{
 }
 
 .nav__logo {
-    font-size: 50px;
     background-color: #ffffff;
     padding: 30px 20px;
     text-align: left;
     border: 1px solid #333;
     border-radius: 8px;
+    text-wrap: nowrap;
 }
 
 .nav__logo:hover{
@@ -39,12 +56,12 @@ body{
 
 .nav__links{
     display: flex;
-    justify-content:left;
-    margin-right: 350px;
+    justify-content:center;
     padding: 0 10px;
     align-items: center;
-    gap: 200px;
+    gap: 50px;
     width: 50%;
+    margin-left: -50px;
 
 }
 
@@ -86,13 +103,15 @@ body{
     justify-content: space-between;
     flex-basis: 50%;
     gap: 15px;
-    height: 700px;
     border-radius: 8px;
     padding: 0;
 }
 .main__title{
     text-align: center;
-    padding: 20px 20px;
+    padding: 30px 0px;
+    margin: 0;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 .main__section{
     padding: 20px;
